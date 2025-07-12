@@ -1,4 +1,3 @@
-import React from "react";
 import WeatherCard from "./WeatherCard";
 import { FaWind, FaCloudSun } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
@@ -15,10 +14,10 @@ const WeatherInfo = ({ data }) => {
 
   return (
     <div className="mx-auto grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-screen-md mt-10 px-4">
-  {weatherInfo.map((item, index) => (
-    <WeatherCard key={index} {...item} />
-  ))}
-</div>
+      {weatherInfo.map((item, index) => (
+        <WeatherCard key={index} {...item} />
+      ))}
+    </div>
   );
 };
 

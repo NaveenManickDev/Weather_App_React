@@ -1,5 +1,3 @@
-import React from "react";
-
 const WeatherCard = ({ icon, label, value }) => {
   return (
     <div className="bg-white/20 p-5 rounded-xl flex flex-col items-center text-center text-white shadow-lg">
